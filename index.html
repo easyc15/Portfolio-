@@ -69,11 +69,10 @@
       border-bottom: 1px solid var(--border);
     }
     .nav-logo {
-      font-family: 'Space Mono', monospace;
-      font-weight: 700; font-size: 1.15rem;
-      color: var(--accent); text-decoration: none;
+      text-decoration: none;
+      display: flex; align-items: center;
     }
-    .nav-logo span { color: var(--text); }
+    .nav-logo img { height: 40px; width: auto; display: block; }
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a {
       text-decoration: none; color: var(--text2);
@@ -378,7 +377,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <nav>
-  <a href="#hero" class="nav-logo">CP<span>Dev</span></a>
+  <a href="#hero" class="nav-logo"><img src="/Rectangle (6).png" alt="Logo"/></a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
