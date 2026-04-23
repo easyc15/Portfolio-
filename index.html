@@ -69,10 +69,27 @@
       border-bottom: 1px solid var(--border);
     }
     .nav-logo {
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      font-size: 20px;
+      font-weight: 700;
       text-decoration: none;
-      display: flex; align-items: center;
+      border: 1.5px solid #00E5C3;
+      border-radius: 8px;
+      padding: 5px 12px;
+      transition: box-shadow 0.2s ease, opacity 0.2s ease;
     }
-    .nav-logo img { height: 40px; width: auto; display: block; }
+    .nav-logo:hover {
+      box-shadow: 0 0 10px rgba(0, 229, 195, 0.4);
+      opacity: 0.9;
+    }
+    .logo-bracket {
+      color: #00E5C3;
+      font-weight: 400;
+    }
+    .logo-name {
+      color: #ffffff;
+      font-weight: 700;
+    }
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a {
       text-decoration: none; color: var(--text2);
@@ -377,7 +394,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <nav>
-  <a href="#hero" class="nav-logo"><img src="/Rectangle (5).png" alt="Logo"/></a>
+  <a href="#hero" class="nav-logo"><span class="logo-bracket">&lt;</span><span class="logo-name">CP</span><span class="logo-bracket">/&gt;</span></a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
